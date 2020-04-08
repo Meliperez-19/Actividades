@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title></title>
+	<script src="jquery.js"></script>
+
+	<script >
+		$(document).ready(function(){
+			 $('body,html').css(
+			 	'background','#A4A4AE');
+			 $('h1').css('text-align','center');
+
+			 var bgitem = $('#item').css('background-color');
+			 var citem = $('#item').css('color');
+			 if(bgitem === citem)
+			 	$('item').css('color','#fff');
+
+			
+          });
+	</script>
+	<style>
+		
+		body,html{
+			background: #CDD2D1;
+			color:#fff;
+			font-family: arial;
+			margin:0;
+			padding: 0;
+		}
+		#item{
+			display: block;
+			height: 50px;
+			margin: 5% auto;
+			width: 300px;
+			background: #000;
+
+		}
+		
+		
+	</style>
+</head> 
+<body>
+	<h1><strong>inicio de prueba</strong></h1>
+	<div id="item">item1</div>
+	<div id="item">tem2</div>
+		
+</body>
+</html>

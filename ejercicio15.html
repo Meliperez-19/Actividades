@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title></title>
+	<script src="jquery.js"></script>
+	<script >
+		$(document).ready(function(){
+			$('a').on("click",function(e){
+				e.preventDefault();
+				var link  = $(this).attr('href');
+				alert("usted se dirige a otro sitio");
+				location.href = link;
+
+				
+			 
+			
+			
+          });
+			}
+			
+
+	</script>
+</head> 
+<body>
+	
+	<a href="https://sena.territorio.la/cms/index.php">Plataforma sena</a>
+		
+</body>
+</html>

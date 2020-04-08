@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title></title>
+	<script src="jquery.js"></script>
+	<script >
+		var seleccion;
+		$(document).ready(function(){
+		seleccion = $('.ejer1   ');
+		if (seleccion.length)
+			console.log('existe: ' + seleccion.length);
+		else
+			console.log('no existe elementoo');
+		//seleccion.not('.mie').text('primera seleccion,sin clase ');
+
+		//seleccion.has('p').text('segunda seleccion,con <p>en el contenido');
+
+		$('li').first().html('<strong>elemento 1</strong>');
+		$('li').eq(2).text('elemento #3');
+          });
+	</script>
+</head>
+<body>
+	<div class="ejer1">
+		<p></p>
+	</div>
+
+	<div class="ejer1">
+		<span></span>	
+	</div>
+	<ul>
+				<li><a href="#">Op1</a></li>
+				<li><a href="#">Op2</a></li>
+				<li><a href="#">Op3</a></li>
+				<li><a href="#">Op4</a></li>
+
+			</ul>
+	
+</body>
+</html>

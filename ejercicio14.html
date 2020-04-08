@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title></title>
+	<script src="jquery.js"></script>
+	<script >
+		$(document).ready(function(){
+
+			console.log($('header img').width(350))
+		
+			
+			
+		$('#wi1').height(100);
+			
+			//var pos = $('#wi2 p').position();
+			//console.log('position left: ' + pos.left + ' position top: ' + pos-top);
+			
+          });
+	</script>
+	<style>
+		
+		body,html{
+			background: #ccc;
+			margin: 20px;
+			padding: 0;	
+		}
+
+		header{
+			display: block;
+			margin: 0 auto;
+			width: 365px;
+
+
+		}
+		#wi1,#wi2{
+			background: red;
+			display: block;
+			height: 150px;
+			margin: 10px auto;
+			width: 500px;
+		}
+
+		#wi1{
+			background: blue;
+			height: 150px;
+
+		}
+		#wi2{
+			padding: 15px;
+			border-radius: 40px 0 40px 0;
+		}
+		p{
+			margin-left: 10px;
+		}
+
+		.img{
+			display: block;
+		}
+
+	</style>
+</head> 
+<body>
+
+	<header>
+		<img src="img/sui.jpg" class="img">
+	</header>
+
+	<div id="wi1"></div>
+	<div id="wi2">
+		<p><strong>BIENVENIDOS</strong></p>
+	</div>
+			
+</body>
+</html>

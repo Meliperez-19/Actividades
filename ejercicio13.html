@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title></title>
+	<script src="jquery.js"></script>
+	<style>
+		.test{
+			background-color: blue;
+
+		}
+	</style>
+	<script >
+		$(document).ready(function(){
+			$(document).on("click",function(){
+				$("#test").toggleClass("test");
+				if ($("#test").hasClass("test")) {
+					$("#test").text("great I'm blue");
+				}
+				else{
+					$("#test").text("I'm not blue anymore");
+				}
+			});
+			
+          });
+	</script>
+</head> 
+<body>
+	<div id='test'>Click on me</div>		
+</body>
+</html>
